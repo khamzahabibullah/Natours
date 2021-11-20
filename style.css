@@ -1,0 +1,33 @@
+:root {
+  --clr-green-300: 111 55% 64%;
+  --clr-green-500: 140 49% 55%;
+  --clr-green-700: 160 64% 43%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      hsl(var(--clr-green-300) / 0.8),
+      hsl(var(--clr-green-700) / 0.8)
+    ),
+    url('./assets/hero.jpg');
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
